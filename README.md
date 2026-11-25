@@ -10,4 +10,14 @@ Learning machine learning with PyTorch.
                                         m = b1*m + (1-b1)g
                                         v = b2*v + (1-b2)g**2
                                         step = lr*m/sqrt(v+e)
-        
+  
+  Day 4: 
+        mini-batches:
+          Until now we have been using every step for all the data. If the size of the data set becomes very large, we should use mini-batches (choose a small random group from all the data).
+              epoch: one full pass from training data
+              steps per epoch: number of points 
+        cllasification:
+          the model assgin a score to each classes
+          softmax turns the scores into probability in a way that p_i = exp(z_i)/sum on exp(z_j)
+          cross entropy loss: loss is -log(p of corrext class)
+          accuracy = the fraction of correct prediction
